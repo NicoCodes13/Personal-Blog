@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    assetModuleFilename: 'assets/images/[name][hash].[ext]',
+    assetModuleFilename: 'assets/images/[name][hash][ext]',
   },
   resolve: {
     extensions: ['.js'],
@@ -32,7 +32,15 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../',
+            },
+          },
+          'css-loader',
+        ],
       },
       {
         test: /\.png|svg|jpg/,
@@ -51,7 +59,7 @@ module.exports = {
             //salida del archivo final
             outputPath: './assets/fonts/',
             //path a seguir desde css para encontrar las fonts en dist
-            publicPath: './fonts/',
+            publicPath: '../assets/fonts',
             esModule: false,
           },
         },

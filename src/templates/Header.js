@@ -1,5 +1,6 @@
 import '../styles/header.css';
 import '../assets/font/flaticon.css';
+import logo from '../assets/images/Logo-negro.png';
 
 const Header = () => {
   const view = /*html*/ `
@@ -24,7 +25,7 @@ const Header = () => {
     </section>
     <nav>
       <section class="nav-logo-container">
-        <a href="/"><img src="/" alt="Logo de mi blog" /></a>
+        <a href="/#"><img src=${logo} alt="Logo de mi blog" /></a>
       </section>
       <section class="profile-link">
         <a href="#/porfile">Sobre mí</a>
