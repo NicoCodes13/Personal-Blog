@@ -4,6 +4,7 @@ import logo from '../assets/images/Logo-negro.png';
 
 const Header = () => {
   const view = /*html*/ `
+  <header>
     <section class="header-icons-container">
       <div class="icons">
         <a href="" title="facebook"
@@ -31,6 +32,7 @@ const Header = () => {
         <a href="#/porfile">Sobre mí</a>
       </section>
     </nav>
+  </header>
   `;
   return view;
 };

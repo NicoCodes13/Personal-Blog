@@ -12,12 +12,10 @@ const routes = {
 };
 
 const router = async () => {
-  const header = null || document.getElementById('header');
-  const content = null || document.getElementById('content');
-  const footer = null || document.getElementById('footer');
-
-  header.innerHTML = await Header();
-  content.innerHTML = await Home();
+  const app = null || document.getElementById('app');
+  app.innerHTML = `${Header()}
+  ${Home()}
+  `;
 };
 
 export default router;
