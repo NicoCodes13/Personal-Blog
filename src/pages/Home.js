@@ -1,4 +1,5 @@
 import '../styles/home.css';
+
 const Home = () => {
   const view = /*html*/ `
   <main class="home-main">
