@@ -6,7 +6,7 @@ import Porfile from '../pages/Porfile';
 const routes = {
   '/': Home,
   blogs: Blogs,
-  blog: Blog,
+  ':blog': Blog,
   porfile: Porfile,
 };
 

@@ -6,7 +6,7 @@ const Card = ({ imagen, title, resume }) => {
         <p>
           ${resume}
         </p>
-        <a href="#/blog">Leer más</a>
+        <a href="#/:blog">Leer más</a>
     </article>
   `;
   return view;
