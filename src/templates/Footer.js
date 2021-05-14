@@ -1,7 +1,7 @@
 const Footer = () => {
   const view = /*html*/ `
     <footer>
-      <p>Aca ira informacion diversa de pie de pagina</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </footer>
   `;
   return view;

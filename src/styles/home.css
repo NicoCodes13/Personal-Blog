@@ -1,4 +1,9 @@
 .home-main {
+  position: fixed;
+  top: 140px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   /* 1. Posicionamiento */
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;

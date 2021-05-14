@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
 
 body {
-  /* 1. Positioning */
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   /* 2. Box Model */
   margin: 0;
   padding: 0;

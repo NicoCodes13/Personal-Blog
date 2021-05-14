@@ -2,7 +2,7 @@ import '../styles/home.css';
 
 const Home = () => {
   const view = /*html*/ `
-  <main class="home-main">
+  <main class="home-main" id=home-main>
       <section>
         <h1 class="home-main-text">
           Conoce las novedades y <br />

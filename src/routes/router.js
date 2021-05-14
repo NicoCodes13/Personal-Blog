@@ -9,7 +9,6 @@ const router = async () => {
 
   let hash = getHash();
   let render = routes[hash] ? routes[hash] : Error404;
-  console.log(render);
 
   app.innerHTML = await `
   ${Header()}
