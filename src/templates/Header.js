@@ -7,16 +7,16 @@ const Header = () => {
   <header>
     <section class="header-icons-container">
       <div class="icons">
-        <a href="" title="facebook"
+        <a href="https://www.facebook.com/nickcasrod/" title="facebook"
           ><span class="flaticon-001-facebook"></span
         ></a>
-        <a href="" title="twitter"
+        <a href="https://twitter.com/nicocast13" title="twitter"
           ><span class="flaticon-002-twitter"></span
         ></a>
-        <a href="" title="instagram"
+        <a href="https://www.instagram.com/nicolas_cst/" title="instagram"
           ><span class="flaticon-011-instagram"></span
         ></a>
-        <a href="" title="linkedin"
+        <a href="https://www.linkedin.com/in/nicocodes/" title="linkedin"
           ><span class="flaticon-010-linkedin"></span
         ></a>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="youtube"
