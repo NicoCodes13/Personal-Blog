@@ -3,6 +3,7 @@ import '../assets/font/flaticon.css';
 import logo from '../assets/images/Logo-negro.png';
 
 const Header = () => {
+<<<<<<< Updated upstream
   const view = html`
     <header>
       <section class="header-icons-container">
@@ -34,6 +35,9 @@ const Header = () => {
       </nav>
     </header>
   `;
+=======
+  const view = html` <h1>Hello this is my header</h1> `;
+>>>>>>> Stashed changes
   return view;
 };
 export default Header;
