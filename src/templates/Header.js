@@ -3,7 +3,7 @@ import '../assets/font/flaticon.css';
 import logo from '../assets/images/Logo-negro.png';
 
 const Header = () => {
-  const view = /*html*/ `
+  const view = /* html */ `
     <header>
       <section class="header-icons-container">
         <div class="icons">
