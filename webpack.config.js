@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    assetModuleFilename: 'assets/images/[name][hash][ext]',
   },
   resolve: {
     extensions: ['.js'],
@@ -31,11 +32,37 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../',
+            },
+          },
+          'css-loader',
+        ],
       },
       {
-        test: /\.png/,
+        test: /\.png|svg|jpg/,
         type: 'asset/resource',
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            //mimetipe el tipo de dato a usar
+            mimetype: 'application/font-woff',
+            //nombre del archivo de salida que respeta el nombre y ext original
+            name: '[name].[contenthash].[ext]',
+            //salida del archivo final
+            outputPath: './assets/fonts/',
+            //path a seguir desde css para encontrar las fonts en dist
+            publicPath: '../assets/fonts',
+            esModule: false,
+          },
+        },
       },
     ],
   },
@@ -64,4 +91,7 @@ module.exports = {
     open: true,
   },
   devtool: 'source-map',
+  stats: {
+    children: true,
+  },
 };

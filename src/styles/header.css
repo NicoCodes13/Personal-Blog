@@ -1,0 +1,62 @@
+header {
+  /* 1. Positioning */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* 2. Box Model */
+  width: 100%;
+  height: 140px;
+}
+header .header-icons-container {
+  /* 1. Positioning */
+  display: grid;
+  /* 2. Box Model */
+  width: 100%;
+  height: 50px;
+  /* 4. Design */
+  background-color: #47cfac;
+}
+header .header-icons-container .icons {
+  /* 1. Positioning */
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+  /* 2. Box Model */
+  width: 300px;
+  height: auto;
+  margin-right: 50px;
+}
+header .header-icons-container .icons span {
+  /* 4. Design */
+  color: white;
+}
+nav {
+  /* 1. Positioning */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 2. Box Model */
+  height: 90px;
+}
+nav .nav-logo-container {
+  /* 2. Box Model */
+  margin-left: 50px;
+}
+nav .nav-logo-container img {
+  /* 2. Box Model */
+  width: 220px;
+  margin-top: 10px;
+}
+nav .profile-link {
+  /* 1. Positioning */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* 2. Box Model */
+  margin-right: 50px;
+}
+nav .profile-link a {
+  /* 4. Design */
+  color: black;
+  border-bottom: 1px solid black;
+}

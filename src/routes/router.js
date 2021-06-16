@@ -1,20 +1,20 @@
-import Blog from '../pages/Blog.html';
-import Blogs from '../pages/Blogs.html';
-import Porfile from '../pages/Porfile.html';
 import Header from '../templates/Header';
-
-const routes = {
-  '/': Blog,
-  '/blogs': Blogs,
-  '/porfile': Porfile,
-};
+import Error404 from '../pages/Error404';
+import getHash from '../utils/getHash';
+import routes from './routes';
+import Footer from '../templates/Footer';
 
 const router = async () => {
-  const header = null || document.getElementById('header');
-  const content = null || document.getElementById('content');
-  const footer = null || document.getElementById('footer');
+  const app = null || document.getElementById('app');
 
-  header.innerHTML = await Header();
+  let hash = getHash();
+  let render = routes[hash] ? routes[hash] : Error404;
+
+  app.innerHTML = await `
+  ${Header()}
+  ${render()}
+  ${hash === '/' ? '' : Footer()}
+  `;
 };
 
 export default router;
