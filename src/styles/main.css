@@ -14,3 +14,7 @@ a {
   /* 4. Design */
   color: black;
 }
+.grid-container {
+  max-width: 980px;
+  margin: auto;
+}

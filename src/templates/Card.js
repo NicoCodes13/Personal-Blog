@@ -1,3 +1,5 @@
+import '../styles/card.css';
+
 const Card = ({ imagen, title, resume }) => {
   const view = /* html */ `
     <article class="post-container">

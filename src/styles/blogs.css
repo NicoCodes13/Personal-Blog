@@ -37,6 +37,7 @@
   font-size: 12px;
   font-weight: 500;
 }
-.post-container img {
-  width: 350px;
+.blogs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
