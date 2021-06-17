@@ -1,25 +1,24 @@
 .contact-main-container {
+  width: 100%;
+  min-height: 250px;
   background-color: #e6e9ed;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 .contact-main-container div {
-  width: 450px;
-  height: 250px;
-  margin: auto;
-}
-.contact-main-container div img {
   display: inline-block;
-  width: 20%;
-  margin-top: 50px;
-}
-.contact-main-container div div {
-  display: inline-block;
-  width: 70%;
-  font-weight: 500;
+  width: 49.5%;
+  height: 100%;
 }
 .contact-main-container div a {
-  padding-bottom: 5px;
-  border-bottom: solid 1px black;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+.contact-main-container .contact-left,
+.contact-right {
+  text-align: initial;
+  margin-top: 85px;
+}
+.contact-main-container img {
+  width: 100px;
 }
