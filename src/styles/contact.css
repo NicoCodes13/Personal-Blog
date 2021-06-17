@@ -1,0 +1,25 @@
+.contact-main-container {
+  background-color: #e6e9ed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+.contact-main-container div {
+  width: 450px;
+  height: 250px;
+  margin: auto;
+}
+.contact-main-container div img {
+  display: inline-block;
+  width: 20%;
+  margin-top: 50px;
+}
+.contact-main-container div div {
+  display: inline-block;
+  width: 70%;
+  font-weight: 500;
+}
+.contact-main-container div a {
+  padding-bottom: 5px;
+  border-bottom: solid 1px black;
+}
