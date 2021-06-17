@@ -26,7 +26,7 @@ const Header = () => {
       </section>
       <nav>
         <section class="nav-logo-container">
-          <a href="/#"><img src=${logo} alt="Logo de mi blog" /></a>
+          <a href="#/blogs"><img src=${logo} alt="Logo de mi blog" /></a>
         </section>
         <section class="profile-link">
           <a href="#/porfile">Sobre mí</a>

@@ -33,6 +33,7 @@ const Blogs = () => {
                 imagen: post.image,
                 title: post.title,
                 resume: post.resume,
+                isBlogpost: post.isBlogpost,
               })
             )
             .join('')}
